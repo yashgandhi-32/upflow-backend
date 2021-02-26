@@ -1,5 +1,5 @@
 import { Response, Request } from "express";
-import { SUCCESSFUL_RESPONSE } from "../../../util/success";
+import { SUCCESSFUL_RESPONSE } from "../../../util/response";
 import { validationResult } from "express-validator"
 import {
     downloadFile,

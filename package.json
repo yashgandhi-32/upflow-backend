@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node src/server.ts",
+    "build": "npm run build-ts && npm run lint",
+    "build-ts": "tsc",
+    "test": "mocha -r ts-node/register test/*.test.ts",
+    "lint": "tsc --noEmit && eslint \"*/**/*.{js,ts}\" --quiet --fix",
+    "check-deps": "npm audit && ncu"
   },
   "author": "",
   "license": "ISC",
