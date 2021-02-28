@@ -22,6 +22,11 @@ Construct a micro-service that when given an link to a pdf document:
 ## Setup
 ```shell
 
+# clone the repo
+    
+git clone https://github.com/yashgandhi-32/upflow-backend
+
+   
 # Change directory
 
 cd  <project_name>
